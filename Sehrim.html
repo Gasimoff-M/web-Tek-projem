@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Şehrim - Nahçıvan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      padding-top: 60px;
+    }
+
+    .section-title {
+      color: #0d6efd;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0d6efd;
+      padding-bottom: 5px;
+    }
+
+    .image-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+    }
+
+    .image-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .image-card p {
+      margin: 10px;
+      font-weight: 500;
+    }
+
+    .place-section {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-top: 40px;
+    }
+
+    footer {
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .image-card img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">MGasimli</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="about.html">Hakkında</a></li>
+        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Sehrim.html">Şehrim</a></li>
+        <li class="nav-item"><a class="nav-link" href="Miras.html">Mirasımız</a></li>
+        <li class="nav-item"><a class="nav-link" href="İlgiAlanim.html">İlgi Alanlarım</a></li>
+        <li class="nav-item"><a class="nav-link" href="İletisim.html">İletişim</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Giriş</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="bg-success text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4"><i class="fas fa-city me-2"></i>Nahçıvan</h1>
+    <p class="lead">Doğduğum ve gurur duyduğum şehir</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="place-section">
+    <h2 class="section-title"><i class="fas fa-info-circle me-2"></i>Genel Bilgiler</h2>
+    <ul>
+      <li><strong>Ülke:</strong> Azerbaycan Cumhuriyeti</li>
+      <li><strong>Nüfus:</strong> 407.088</li>
+      <li><strong>Bilinen Yerler:</strong> Alinja Kalesi, Mümine Hatun Türbesi, Duzdağ Termal Mağarası</li>
+    </ul>
+  </section>
+
+  <section class="place-section">
+    <h2 class="section-title"><i class="fas fa-images me-2"></i>Nahçıvan'dan Kareler</h2>
+      <div class="row g-4">
+      <div class="col-md-4">
+      <img src="Naxcivan.jpeg" class="img-fluid rounded shadow" alt="Nahçıvan 1">
+    </div>
+    <div class="col-md-4">
+      <img src="Naxcivan2.jpeg" class="img-fluid rounded shadow" alt="Nahçıvan 2">
+    </div>
+    <div class="col-md-4">
+      <img src="Naxcivan3.jpeg" class="img-fluid rounded shadow" alt="Nahçıvan 3">
+    </div>
+  </div>
+</section>
+
+
+  <section class="place-section">
+    <h2 class="section-title"><i class="fas fa-image me-2"></i>Gezilecek Yerler</h2>
+    <div class="row g-4">
+          <div class="col-md-4">
+        <a href="#alinja" class="image-card">
+          <img src="ElinceQalası.jpg" alt="Alinja Kalesi">
+          <p>Alinja Kalesi</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#mumine" class="image-card">
+          <img src="MomineHatun.jpg" alt="Mümine Hatun Türbesi">
+          <p>Mümine Hatun Türbesi</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#duzdag" class="image-card">
+          <img src="Duzdag.jpg"Duzdağ Mağarası">
+          <p>Duzdağ Termal Mağarası</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALT BİLGİ BÖLÜMLERİ -->
+  <section class="place-section" id="alinja">
+    <h2 class="section-title"><i class="fas fa-landmark me-2"></i>Alinja Kalesi</h2>
+    <p>Nahçıvan'ın doğusunda, kayalık dağların tepesinde yer alan Alinja Kalesi, orta çağdan kalma bir savunma yapısıdır. 
+    Yüzlerce basamakla ulaşılan bu kale, panoramik manzarasıyla ünlüdür. Azerbaycan tarihindeki direniş sembollerinden biridir.</p>
+  </section>
+
+  <section class="place-section" id="mumine">
+    <h2 class="section-title"><i class="fas fa-tower-observation me-2"></i>Mümine Hatun Türbesi</h2>
+    <p>UNESCO geçici miras listesinde yer alan bu türbe, 12. yüzyılda Azeri mimar Acemi Nahçıvani tarafından yapılmıştır. 
+    Geometrik motiflerle süslü olan yapı, İslam mimarisinin muazzam örneklerinden biridir. 34 metre yükseklikte inşa edilmiştir.</p>
+  </section>
+
+  <section class="place-section" id="duzdag">
+    <h2 class="section-title"><i class="fas fa-mountain me-2"></i>Duzdağ Mağarası</h2>
+    <p>Solunum rahatsızlıklarının tedavisinde kullanılan bu doğal tuz mağarası, Nahçıvan'ın sağlık turizminde önemli yer tutar. 
+    Yer altında özel odalar bulunmaktadır. Her yıl binlerce turist ve hasta burayı ziyaret eder.</p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Mohammad Gasimli | Nahçıvan Tanıtımı</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
